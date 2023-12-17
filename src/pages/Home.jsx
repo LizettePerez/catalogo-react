@@ -1,5 +1,6 @@
 import Header from '../components/header.jsx';
 import HeaderSection from '../components/HeaderSection.jsx';
+import Categorias from '../components/Categorias.jsx';
 
 
 function Home() {
@@ -7,6 +8,7 @@ function Home() {
     <>
       <Header />
       <HeaderSection />
+      <Categorias />
     </>
   );
 }
