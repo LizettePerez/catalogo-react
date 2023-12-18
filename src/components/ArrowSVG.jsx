@@ -1,4 +1,3 @@
-
 const Arrow = () => {
   return (
     <svg
@@ -6,7 +5,7 @@ const Arrow = () => {
       fill="none"
       viewBox="0 0 24 24"
       strokeWidth={1.5}
-      stroke="currentColor"
+      stroke="#34a4ac"
       className="w-6 h-6"
     >
       <path strokeLinecap="round" strokeLinejoin="round" d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" />
