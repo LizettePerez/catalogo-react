@@ -27,10 +27,10 @@ export default function Example() {
     <header className="custom-background">
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div className="flex lg:flex-1">
-          <a href="#" className="-m-1.5 p-1.5">
+          <NavLink to="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Look Naturel</span>
             <img className="h-11 w-auto logoHeader" src={Header} alt="header logo" />
-          </a>
+          </NavLink>
         </div>
         <div className="flex lg:hidden">
           <button
@@ -44,7 +44,7 @@ export default function Example() {
         </div>
         <Popover.Group className="hidden lg:flex lg:gap-x-12">
           <Popover className="relative">
-            <Popover.Button className="flex items-center gap-x-1 text-m leading-6 text-gray-900">
+            <Popover.Button className="flex items-center gap-x-1 text-lg leading-6 text-gray-900">
               Categorias
               <ChevronDownIcon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
             </Popover.Button>
@@ -70,7 +70,7 @@ export default function Example() {
                         <item.icon className="h-6 w-6 text-gray-600 group-hover:text-indigo-600" aria-hidden="true" />
                       </div>
                       <div className="flex-auto">
-                        <a href={item.href} className="block text-gray-900">
+                        <a href={item.href} className="block text-gray-900 text-lg">
                           {item.name}
                           <span className="absolute inset-0" />
                         </a>
@@ -83,31 +83,32 @@ export default function Example() {
             </Transition>
           </Popover>
 
-          <NavLink to="/" className="text-m leading-6">
+          <NavLink to="/catalogo" className="text-lg leading-6">
             Catálogo
           </NavLink>
-          <NavLink to="/" className="text-m leading-6">
+          <NavLink to="/" className="text-lg leading-6">
             Garantía
           </NavLink>
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <NavLink to="/" className="text-m leading-6">
-            Log in <span aria-hidden="true">&rarr;</span>
-          </NavLink>
+          <a href="https://www.instagram.com/looknaturel/" className="text-lg leading-6" target="_blank" rel="noopener noreferrer">
+            Instagram <span aria-hidden="true">&rarr;</span>
+          </a>
         </div>
+
       </nav>
       <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
         <div className="fixed inset-0 z-10" />
         <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto custom-background px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
-            <a href="#" className="-m-1.5 p-1.5">
+            <NavLink to="/" className="-m-1.5 p-1.5">
               <span className="sr-only">Look Naturel</span>
               <img
                 className="h-11 w-auto logoHeader"
                 src={Header}
-                alt=""
+                alt="header logo"
               />
-            </a>
+            </NavLink>
             <button
               type="button"
               className="-m-2.5 rounded-md p-2.5 text-gray-700"
@@ -145,18 +146,11 @@ export default function Example() {
                     </>
                   )}
                 </Disclosure>
-                <a
-                  href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base leading-7 text-gray-900 hover:bg-gray-50"
-                >
-                  Features
-                </a>
-                <a
-                  href="#"
+                <NavLink to="/catalogo"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   Catálogo
-                </a>
+                </NavLink>
                 <a
                   href="#"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base leading-7 text-gray-900 hover:bg-gray-50"
@@ -166,10 +160,11 @@ export default function Example() {
               </div>
               <div className="py-6">
                 <a
-                  href="#"
+                  href="https://www.instagram.com/looknaturel/"
+                  target="_blank" rel="noopener noreferrer"
                   className="-mx-3 block rounded-lg px-3 py-2.5 text-base leading-7 text-gray-900 hover:bg-gray-50"
                 >
-                  Log in
+                  Instagram <span aria-hidden="true">&rarr;</span>
                 </a>
               </div>
             </div>
