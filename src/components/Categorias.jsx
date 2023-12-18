@@ -1,4 +1,4 @@
-import callouts from "../data/CalloutCategoria";
+import callouts from "../data/CalloutCategoria.js";
 
 export default function Example() {
   return (

@@ -2,9 +2,9 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import "./index.css";
 import { Route, Routes } from 'react-router-dom';
-import Home from "./pages/Home";
-import Catalogo from "./pages/Productos";
-import DetalleProducto from "./pages/DetalleProducto";
+import Home from "./pages/Home.jsx";
+import Catalogo from "./pages/Productos.jsx";
+import DetalleProducto from "./pages/DetalleProducto.jsx";
 
 
 function App() {

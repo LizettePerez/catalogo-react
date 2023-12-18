@@ -7,7 +7,7 @@ import {
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
 import Header from '../assets/images/Header/header.webp'
 import { NavLink } from 'react-router-dom'
-import Arrow from "./ArrowSVG";
+import Arrow from "./ArrowSVG.jsx";
 
 
 const products = [
