@@ -7,30 +7,31 @@ import Catalogo from './Catalogo';
 import Pagination from './Pagination';
 
 const sortOptions = [
-  { name: 'Most Popular', href: '#', current: true },
+  { name: 'Most Popular', href: '#', current: false },
   { name: 'Best Rating', href: '#', current: false },
   { name: 'Newest', href: '#', current: false },
   { name: 'Price: Low to High', href: '#', current: false },
   { name: 'Price: High to Low', href: '#', current: false },
 ]
 const subCategories = [
-  { name: 'Totes', href: '#' },
-  { name: 'Backpacks', href: '#' },
-  { name: 'Travel Bags', href: '#' },
-  { name: 'Hip Bags', href: '#' },
-  { name: 'Laptop Sleeves', href: '#' },
+  { name: ' Pupila Pequeña', href: '#' },
+  { name: 'Pupila Regular', href: '#' },
+  { name: 'Accesorios', href: '#' },
 ]
 const filters = [
   {
     id: 'color',
     name: 'Color',
     options: [
-      { value: 'white', label: 'White', checked: false },
-      { value: 'beige', label: 'Beige', checked: false },
-      { value: 'blue', label: 'Blue', checked: true },
+      { value: 'blue', label: 'Blue', checked: false },
+      { value: 'gray', label: 'Gray', checked: false },
       { value: 'brown', label: 'Brown', checked: false },
       { value: 'green', label: 'Green', checked: false },
-      { value: 'purple', label: 'Purple', checked: false },
+      { value: 'violet', label: 'Violet', checked: false },
+      { value: 'pink', label: 'Pink', checked: false },
+      { value: 'black', label: 'Black', checked: false },
+      { value: 'white', label: 'White', checked: false },
+      { value: 'red', label: 'Red', checked: false },
     ],
   },
   {
@@ -39,7 +40,7 @@ const filters = [
     options: [
       { value: 'new-arrivals', label: 'New Arrivals', checked: false },
       { value: 'sale', label: 'Sale', checked: false },
-      { value: 'travel', label: 'Travel', checked: true },
+      { value: 'travel', label: 'Travel', checked: false },
       { value: 'organization', label: 'Organization', checked: false },
       { value: 'accessories', label: 'Accessories', checked: false },
     ],
@@ -53,7 +54,7 @@ const filters = [
       { value: '12l', label: '12L', checked: false },
       { value: '18l', label: '18L', checked: false },
       { value: '20l', label: '20L', checked: false },
-      { value: '40l', label: '40L', checked: true },
+      { value: '40l', label: '40L', checked: false },
     ],
   },
 ]
